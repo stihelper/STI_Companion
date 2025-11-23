@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>STI Companion - Ground Floor</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<style>
+body {
+  background-image: url('images/floors/groundfloor.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.Label {
+  position: fixed;
+  top: 80px;
+  left: 70px;
+  width: 250px;
+  background: #f4ea6b;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 5;
+  text-align: center;
+}
+
+.Label a {
+  display: block;
+  width: 100%;
+  color: #364f94;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 0;
+  transition: background 0.3s ease;
+}
+
+.back-container {
+  position: fixed;
+  top: 130px;
+  left: 70px;
+  width: 250px;
+  background: #888888;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 5;
+  text-align: center;
+}
+
+.back-container a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 0;
+  transition: background 0.3s ease;
+}
+
+.back-container a:hover {
+  background: #666666;
+  border-radius: 20px 20px 20px 0;
+}
+
+.floor-menu {
+  position: fixed;
+  top: 180px;
+  bottom: 0;
+  left: 70px;
+  width: 250px;
+  background: #a6a6a6;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.floor-menu a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.floor-menu a:hover {
+  background: #888888;
+  border-radius: 0 20px 20px 0;
+}
+
+.floor-menu a.active-floor {
+  background: #555555;
+  border-radius: 0 20px 20px 0;
+}
+
+.map-content-area {
+  margin-left: 330px;
+  padding: 20px;
+  position: relative;
+  min-width: 500px;
+}
+
+.map-character {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 250px;
+  height: auto;
+  z-index: 10;
+}
+
+.map-text {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  width: 400px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<nav class="icon-sidebar">
+  <ul>
+    <li><img src="images/logo/4.png" alt="Logo" style="width: 60px;"></li>
+
+    <li><a href="maininterface.html"><img src="images/home.png" alt="Home"></a></li>
+    <li><a href="campusmap.html" class="active"><img src="images/map.png" alt="Map"></a></li>
+    <li><a href="schedule.html"><img src="images/sched1.png" alt="Schedule"></a></li>
+    <li><a href="faq.html"><img src="images/faq.png" alt="FAQ"></a></li>
+    <li><a href="todo.html"><img src="images/todo.png" alt="To-Do"></a></li>
+    <li><a href="about.html"><img src="images/info.png" alt="About"></a></li>
+    <li><a href="logout.html"><img src="images/logout.png" alt="Log Out"></a></li>
+  </ul>
+</nav>
+
+<div class="Label">
+  <a>Ground Floor</a>
+</div>
+
+<div class="back-container">
+  <a href="campusmap.html">Back to Campus Map</a>
+</div>
+
+<nav class="floor-menu">
+  <a href="groundfloor.html" class="active-floor">Ground Floor</a>
+  <a href="mezzanine.html">Mezzanine</a>
+  <a href="2nd.html">2nd Floor</a>
+  <a href="3rd.html">3rd Floor</a>
+  <a href="4th.html">4th Floor</a>
+  <a href="5th.html">5th Floor</a>
+  <a href="6th.html">6th Floor</a>
+  <a href="7th.html">7th Floor</a>
+  <a href="8th.html">8th Floor / Library</a>
+  <a href="penthouse.html">Penthouse</a>
+</nav>
+
+<div class="map-content-area">
+  <img src="images/logo/6.png" alt="LOGO" class="map-character">
+
+  <div class="map-text">
+<br><br><br><br>
+    Welcome to the Ground Floor! Here we'll find the school's bustling hub! The Administration keeps 
+    things running, the Cashier handles payments, the SAO organizes student life, 
+    Guidance offers support, the Registrar manages records, Proware provides uniforms and merch, 
+    and the Clinic cares for anyone who needs it.
+  </div>
+</div>
+
+<img class="footer-logo" src="images/logo/4.png" alt="STI Logo">
+
+</body>
+</html>

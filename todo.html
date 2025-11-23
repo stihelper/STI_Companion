@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>STI Companion - To-Do List</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/10.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.page-container {
+  width: 900px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.mascot {
+  width: 340px;
+  margin-left: 40px;
+}
+
+.justdoit {
+  width: 520px;
+}
+
+.list-label {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.task-item {
+  padding: 18px 20px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.blue-task { background: #dae9ff; }
+.yellow-task { background: #fffcda; }
+
+input[type="checkbox"] { transform: scale(1.6); }
+
+.blue-task input[type="checkbox"] { accent-color: #a7c6ff; }
+.blue-task input[type="checkbox"]:checked { accent-color: #6fa3ff; }
+
+.yellow-task input[type="checkbox"] { accent-color: #f4efb0; }
+.yellow-task input[type="checkbox"]:checked { accent-color: #e6d87a; }
+</style>
+</head>
+
+<body>
+
+<nav class="icon-sidebar">
+  <ul>
+    <li><img src="images/logo/4.png" alt="Logo" style="width: 60px;"></li>
+    <li><a href="maininterface.html"><img src="images/home.png" alt="Home"></a></li>
+    <li><a href="campusmap.html"><img src="images/map.png" alt="Map"></a></li>
+    <li><a href="schedule.html"><img src="images/sched1.png" alt="Schedule"></a></li>
+    <li><a href="faq.html"><img src="images/faq.png" alt="FAQ"></a></li>
+    <li><a href="todo.html" class="active"><img src="images/todo.png" alt="To-Do"></a></li>
+    <li><a href="about.html"><img src="images/info.png" alt="About"></a></li>
+    <li><a href="logout.html"><img src="images/logout.png" alt="Log Out"></a></li>
+  </ul>
+</nav>
+
+<div class="page-container">
+
+  <div class="header-section">
+    <img src="images/logo/8.png" class="mascot" alt="Mascot">
+    <img src="images/justdoit.png" class="justdoit" alt="Just Do It">
+  </div>
+
+  <p class="list-label">Your to-do list:</p>
+
+  <ul style="list-style: none; padding: 0; margin: 0;">
+    <li class="task-item blue-task"><input type="checkbox"> Submit registration forms</li>
+    <li class="task-item yellow-task"><input type="checkbox"> Pay tuition fees</li>
+    <li class="task-item blue-task"><input type="checkbox"> Print class schedule</li>
+    <li class="task-item yellow-task"><input type="checkbox"> Buy school supplies</li>
+    <li class="task-item blue-task"><input type="checkbox"> Update student ID information</li>
+    <li class="task-item yellow-task"><input type="checkbox"> Attend orientation meeting</li>
+    <li class="task-item blue-task"><input type="checkbox"> Review lessons at home</li>
+  </ul>
+
+</div>
+
+<img class="footer-logo" src="images/logo/4.png" alt="STI Logo">
+
+</body>
+</html>

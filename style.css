@@ -1,0 +1,68 @@
+/* Reset and global font */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+/* Sidebar */
+.icon-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  background-color: #364f94; /* your chosen sidebar color */
+  z-index: 3;
+  border-radius: 0 40px 0 0;
+}
+
+.icon-sidebar ul {
+  list-style: none;
+  padding: 60px 0 0 0;           /* remove default UL padding */
+  margin: 0;            /* remove default UL margin */
+}
+
+.icon-sidebar li {
+  margin: 0;            /* remove LI margin */
+  padding: 0;           /* remove LI padding */
+}
+
+.icon-sidebar li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;         /* fixed height for hover area */
+  background-color: #364f94;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 20px 0 0 20px;
+}
+
+.icon-sidebar li a:hover,
+.icon-sidebar li a.active {
+  background-color: #213263;
+}
+
+.icon-sidebar li img {
+  display: block;       /* remove inline gap */
+  width: 24px;
+  height: auto;
+ margin-left: 2px;
+}
+
+.footer-logo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 80px;
+}

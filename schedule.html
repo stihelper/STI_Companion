@@ -1,0 +1,338 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>STI Companion - Schedule</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <style>
+    .content-box {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px #cccccc;
+      padding: 30px;
+      overflow: auto;
+    }
+
+    .jump-btn {
+      display: block;
+      float: left;
+      width: 150px;
+      padding: 10px;
+      margin: 5px;
+      background-color: #ffeb00;
+      color: #0563A3;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+      border: 2px solid #0563A3;
+    }
+
+    .jump-btn:hover {
+      background-color: #e6db00;
+    }
+
+    table.sched-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    table.sched-table th, table.sched-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    table.sched-table th {
+      background-color: #0563A3;
+      color: white;
+    }
+
+    .section-divider {
+      border-top: 2px dashed #ccc;
+      margin: 40px 0;
+      padding-top: 20px;
+    }
+
+    .schedule-header {
+      color: #0563A3;
+      border-left: 5px solid #ffeb00;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="icon-sidebar">
+  <ul>
+    <li><img src="images/logo/4.png" alt="Logo" style="width: 60px;"></li>
+    <li><a href="maininterface.html"><img src="images/home.png" alt="Home"></a></li>
+    <li><a href="campusmap.html"><img src="images/map.png" alt="Map"></a></li>
+    <li><a href="schedule.html" class="active"><img src="images/sched1.png" alt="Schedule"></a></li>
+    <li><a href="faq.html"><img src="images/faq.png" alt="FAQ"></a></li>
+    <li><a href="todo.html"><img src="images/todo.png" alt="To-Do"></a></li>
+    <li><a href="about.html"><img src="images/info.png" alt="About"></a></li>
+    <li><a href="logout.html"><img src="images/logout.png" alt="Log Out"></a></li>
+  </ul>
+</nav>
+
+<table width="100%" height="100%">
+  <tr>
+    <td align="center" style="vertical-align: top; padding-top: 40px;">
+
+      <div style="margin-left: 80px; padding: 0 40px; width: 1050px; text-align: left;">
+
+        <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px;">
+          <img src="images/logo/9.png" alt="Mascot" style="width: 250px; height: auto;">
+          <img src="images/classsched.png" alt="Class Schedule" style="width: 600px; height: auto; margin-top: 60px;">
+        </div>
+
+        <div style="overflow: auto; padding-bottom: 20px;">
+          <a href="#ABM1101" class="jump-btn">ABM 1101</a>
+          <a href="#ABM1102" class="jump-btn">ABM 1102</a>
+          <a href="#CUL1101" class="jump-btn">CUL 1101</a>
+          <a href="#HUMSS1103" class="jump-btn">HUMSS 1103</a>
+          <a href="#ICT1102" class="jump-btn">ICT 1102</a>
+        </div>
+
+        <div id="ABM1101" class="section-divider"></div>
+        <h2 class="schedule-header">ABM 1101</h2>
+
+        <table class="sched-table">
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <td>7:00 - 8:30 AM</td>
+            <td>Gen. Math (Rm 209)</td>
+            <td>Intro to Philo (Rm 209)</td>
+            <td>Gen. Math (Rm 209)</td>
+            <td>Intro to Philo (Rm 209)</td>
+          </tr>
+          <tr>
+            <td>8:30 - 10:00 AM</td>
+            <td>21st Century Lit (Rm 209)</td>
+            <td>Oral Comm (Rm 209)</td>
+            <td>21st Century Lit (Rm 209)</td>
+            <td>Oral Comm (Rm 209)</td>
+          </tr>
+          <tr>
+            <td>11:30 - 1:00 PM</td>
+            <td>Media & Info Lit (Rm 209)</td>
+            <td>Bus. Math (Rm 209)</td>
+            <td>Media & Info Lit (Rm 209)</td>
+            <td>Bus. Math (Rm 209)</td>
+          </tr>
+          <tr>
+            <td>2:30 - 4:00 PM</td>
+            <td>Org & Mngt (Rm 209)</td>
+            <td></td>
+            <td>Org & Mngt (Rm 209)</td>
+            <td>PE & Health (Court 2)</td>
+          </tr>
+        </table>
+        <br>
+        <a href="#" style="color: #0271bc; text-decoration: none;">^ Back to Top</a>
+
+        <div id="ABM1102" class="section-divider"></div>
+        <h2 class="schedule-header">ABM 1102</h2>
+
+        <table class="sched-table">
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Thursday</th>
+          </tr>
+          <tr>
+            <td>10:00 - 11:30 AM</td>
+            <td>Gen. Math</td>
+            <td>21st Century Lit</td>
+            <td>Gen. Math</td>
+          </tr>
+          <tr>
+            <td>1:00 - 2:30 PM</td>
+            <td>Media & Info Lit</td>
+            <td>Intro to Philo</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2:30 - 4:00 PM</td>
+            <td></td>
+            <td>Bus. Math</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4:00 - 5:30 PM</td>
+            <td></td>
+            <td>Org & Mngt</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5:30 - 7:00 PM</td>
+            <td>Oral Comm</td>
+            <td>PE & Health 1</td>
+            <td></td>
+          </tr>
+        </table>
+        <br>
+        <a href="#" style="color: #0271bc; text-decoration: none;">^ Back to Top</a>
+
+        <div id="CUL1101" class="section-divider"></div>
+        <h2 class="schedule-header">CUL 1101</h2>
+
+        <table class="sched-table">
+          <tr>
+            <th>Time</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Friday</th>
+          </tr>
+          <tr>
+            <td>7:00 - 8:30 AM</td>
+            <td>Intro to Philo (211)</td>
+            <td></td>
+            <td>Intro to Philo (211)</td>
+          </tr>
+          <tr>
+            <td>8:30 - 10:00 AM</td>
+            <td>Oral Comm (211)</td>
+            <td></td>
+            <td>Oral Comm (211)</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:30 AM</td>
+            <td>Basic Food Prod (211)</td>
+            <td>Intro Culinary (301)</td>
+            <td>Basic Food Prod (211)</td>
+          </tr>
+          <tr>
+            <td>1:00 - 2:30 PM</td>
+            <td>21st Century Lit (211)</td>
+            <td></td>
+            <td>21st Century Lit (211)</td>
+          </tr>
+          <tr>
+            <td>2:30 - 4:00 PM</td>
+            <td>Gen. Math (211)</td>
+            <td></td>
+            <td>Gen. Math (211)</td>
+          </tr>
+        </table>
+        <br>
+        <a href="#" style="color: #0271bc; text-decoration: none;">^ Back to Top</a>
+
+        <div id="HUMSS1103" class="section-divider"></div>
+        <h2 class="schedule-header">HUMSS 1103</h2>
+
+        <table class="sched-table">
+          <tr>
+            <th>Time</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td>7:00-8:30 AM</td>
+            <td>CORE 1006</td>
+            <td>CORE 1009</td>
+            <td></td>
+            <td>CORE 1006</td>
+            <td>CORE 1009</td>
+            <td>CORE 1009</td>
+          </tr>
+          <tr>
+            <td>9:00-10:00 AM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>CORE 1013</td>
+          </tr>
+          <tr>
+            <td>10:00-11:30 AM</td>
+            <td></td>
+            <td>CORE 1007</td>
+            <td></td>
+            <td></td>
+            <td>CORE 1007</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1:00-2:30 PM</td>
+            <td>CORE 1010</td>
+            <td></td>
+            <td></td>
+            <td>CORE 1010</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <br>
+        <a href="#" style="color: #0271bc; text-decoration: none;">^ Back to Top</a>
+
+        <div id="ICT1102" class="section-divider"></div>
+        <h2 class="schedule-header">ICT 1102</h2>
+
+        <table class="sched-table">
+          <tr>
+            <th>Time</th>
+            <th>Mon</th>
+            <th>Wed</th>
+            <th>Thurs</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td>7:00-8:30AM</td>
+            <td></td>
+            <td>SPECIAL 1093</td>
+            <td></td>
+            <td>SPECIAL 1093</td>
+          </tr>
+          <tr>
+            <td>11:30-1:00PM</td>
+            <td>CORE 1007</td>
+            <td>CORE 1010</td>
+            <td>CORE 1007</td>
+            <td>CORE 1010</td>
+          </tr>
+          <tr>
+            <td>2:30-4:00PM</td>
+            <td>CORE 1009</td>
+            <td></td>
+            <td>CORE 1009</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4:00-5:30PM</td>
+            <td>CORE 1006</td>
+            <td></td>
+            <td>CORE 1006</td>
+            <td></td>
+          </tr>
+        </table>
+        <br>
+        <a href="#" style="color: #0271bc; text-decoration: none;">^ Back to Top</a>
+
+      </div>
+
+    </td>
+  </tr>
+</table>
+
+<img class="footer-logo" src="images/logo/4.png" alt="STI Logo">
+
+</body>
+</html>
